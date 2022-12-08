@@ -31,7 +31,6 @@ def get_ip(url: str) -> str:
     Returns:
         str: IP адрес
     """
-    # Приводим к виду sstmk.ru
     hostname = urlparse(url).hostname
     return socket.gethostbyname(hostname)
 
